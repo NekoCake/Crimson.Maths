@@ -1,15 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Input.Touch;
-using Microsoft.Xna.Framework.Media;
-
 using Vector3 = Crimson.Maths.Vector3;
 using XnaVector3 = Microsoft.Xna.Framework.Vector3;
 
@@ -18,7 +9,7 @@ namespace Xna4Demo
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -31,75 +22,40 @@ namespace Xna4Demo
             Content.RootDirectory = "Content";
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
-            base.Initialize();
-        }
-
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
-        protected override void LoadContent()
-        {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            font = Content.Load<SpriteFont>(@"Fonts/Font");
-
-            a = new Vector3();
-            a.X = 10;
-            a.Y = 11;
-            a.Z = 12;
+            a = new Vector3 {X = 10, Y = 11, Z = 12};
 
             b = new Vector3();
             b.X = b.Y = b.Z = 1;
 
-            //c = Vector3.Add(a, b);
-            c.InternalXnaVector = a.InternalXnaVector + b.InternalXnaVector; // <-- interesting
+            // c = Vector3.Add(a, b);
+            c.InternalVector3 = a.InternalVector3 + b.InternalVector3; // <-- interesting
 
-            XnaVector3 vec = new XnaVector3(1,2,3);
-            Vector3 test = vec;
-            XnaVector3 test2 = test;
+            Vector3 vec = new Vector3(1, 2, 3); // testing type casting
+            XnaVector3 test = vec;
+            Vector3 test2 = test;
+
+            base.Initialize();
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
-        protected override void UnloadContent()
+        protected override void LoadContent()
         {
-            // TODO: Unload any non ContentManager content here
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            font = Content.Load<SpriteFont>(@"Fonts/Font");
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            {
                 this.Exit();
+            }
 
-            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
-
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -108,8 +64,8 @@ namespace Xna4Demo
             XnaVector3 b = this.b;
 
             spriteBatch.Begin();
-            spriteBatch.DrawString(font, "Vector A: " + a + "    " + this.a.InternalXnaVector.GetType().Assembly.FullName, new Vector2(20, 20), Color.White);
-            spriteBatch.DrawString(font, "Vector B: " + b + "    " + this.b.InternalXnaVector.GetType().Assembly.FullName, new Vector2(20, 40), Color.White);
+            spriteBatch.DrawString(font, "Vector A: " + a, new Vector2(20, 20), Color.White);
+            spriteBatch.DrawString(font, "Vector B: " + b, new Vector2(20, 40), Color.White);
             spriteBatch.DrawString(font, "______________________________", new Vector2(20, 60), Color.White);
             spriteBatch.DrawString(font, "Vector A+B: " + c, new Vector2(20, 80), Color.White);
             spriteBatch.End();

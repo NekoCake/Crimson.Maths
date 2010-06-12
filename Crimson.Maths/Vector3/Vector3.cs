@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace Crimson.Maths
 {
@@ -17,27 +18,8 @@ namespace Crimson.Maths
 
         public override string ToString()
         {
-            return string.Format("[{0}, {1}, {2}]", this.X, this.Y, this.Z);
+            CultureInfo currentCulture = CultureInfo.CurrentCulture;
+            return string.Format(currentCulture, "{{X:{0}, Y:{1}, Z:{2}}}", this.X.ToString(currentCulture), this.Y.ToString(currentCulture), this.Z.ToString(currentCulture));
         }
     }
-
-#if XNA4 || XNA31
-    public partial struct Vector3
-    {
-        [FieldOffset(0)]
-        public Microsoft.Xna.Framework.Vector3 InternalXnaVector;
-
-        public static implicit operator Microsoft.Xna.Framework.Vector3(Vector3 @this)
-        {
-            return @this.InternalXnaVector;
-        }
-
-        public static implicit operator Vector3(Microsoft.Xna.Framework.Vector3 @this)
-        {
-            Vector3 @return = new Vector3();
-            @return.InternalXnaVector = @this;
-            return @return;
-        }
-    }
-#endif
 }
