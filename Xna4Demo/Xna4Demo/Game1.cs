@@ -98,9 +98,13 @@ namespace Xna4Demo
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            Microsoft.Xna.Framework.Vector3 a = this.a.InternalXnaVector;
+            Microsoft.Xna.Framework.Vector3 b = this.b.InternalXnaVector;
+            Microsoft.Xna.Framework.Vector3 c = this.c.InternalXnaVector;
+
             spriteBatch.Begin();
-            spriteBatch.DrawString(font, "Vector A: " + a, new Vector2(20, 20), Color.White);
-            spriteBatch.DrawString(font, "Vector B: " + b, new Vector2(20, 40), Color.White);
+            spriteBatch.DrawString(font, "Vector A: " + a + "    " + this.a.InternalXnaVector.GetType().Assembly.FullName, new Vector2(20, 20), Color.White);
+            spriteBatch.DrawString(font, "Vector B: " + b + "    " + this.b.InternalXnaVector.GetType().Assembly.FullName, new Vector2(20, 40), Color.White);
             spriteBatch.DrawString(font, "______________________________", new Vector2(20, 60), Color.White);
             spriteBatch.DrawString(font, "Vector A+B: " + c, new Vector2(20, 80), Color.White);
             spriteBatch.End();
