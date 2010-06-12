@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
 using Vector3 = Crimson.Maths.Vector3;
+using XnaVector3 = Microsoft.Xna.Framework.Vector3;
 
 namespace Xna4Demo
 {
@@ -62,7 +63,12 @@ namespace Xna4Demo
             b = new Vector3();
             b.X = b.Y = b.Z = 1;
 
-            c = Vector3.Add(a, b);
+            //c = Vector3.Add(a, b);
+            c.InternalXnaVector = a.InternalXnaVector + b.InternalXnaVector; // <-- interesting
+
+            XnaVector3 vec = new XnaVector3(1,2,3);
+            Vector3 test = vec;
+            XnaVector3 test2 = test;
         }
 
         /// <summary>
@@ -98,9 +104,8 @@ namespace Xna4Demo
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            Microsoft.Xna.Framework.Vector3 a = this.a.InternalXnaVector;
-            Microsoft.Xna.Framework.Vector3 b = this.b.InternalXnaVector;
-            Microsoft.Xna.Framework.Vector3 c = this.c.InternalXnaVector;
+            XnaVector3 a = this.a;
+            XnaVector3 b = this.b;
 
             spriteBatch.Begin();
             spriteBatch.DrawString(font, "Vector A: " + a + "    " + this.a.InternalXnaVector.GetType().Assembly.FullName, new Vector2(20, 20), Color.White);
