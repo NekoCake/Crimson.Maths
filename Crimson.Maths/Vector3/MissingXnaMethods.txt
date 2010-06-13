@@ -26,6 +26,9 @@ TransformNormal
 
 __________
 Methods missing testing
+
 Xna casts
+SlimDX casts
 Add
 Subtract
+Divide
