@@ -2,6 +2,8 @@
 {
 #if XNA4 || XNA31
     using XnaVector3 = Microsoft.Xna.Framework.Vector3;
+#elif SlimDX
+    using SlimVector3 = SlimDX.Vector3;
 #endif
 
     public partial struct Vector3
@@ -10,6 +12,8 @@
         {
 #if XNA4 || XNA31
             this.InternalVector3 = new XnaVector3();
+#elif SlimDX
+            this.InternalVector3 = new SlimVector3();
 #endif
             this.X = this.Y = this.Z = value;
         }
@@ -18,6 +22,8 @@
         {
 #if XNA4 || XNA31
             this.InternalVector3 = new XnaVector3();
+#elif SlimDX
+            this.InternalVector3 = new SlimVector3();
 #endif
             this.X = x;
             this.Y = y;

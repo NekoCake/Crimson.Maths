@@ -193,14 +193,16 @@
     </When>
     <When Condition="'$(Configuration)' == 'Debug - SlimDX'">
       <ItemGroup>
-        <Reference Include="SlimDX, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86" >
-          <Private>False</Private>
+        <Reference Include="SlimDX, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+            <SpecificVersion>False</SpecificVersion>
+            <Private>False</Private>
         </Reference>
       </ItemGroup>
     </When>
     <When Condition="'$(Configuration)' == 'Release - SlimDX'">
       <ItemGroup>
-        <Reference Include="SlimDX, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86" >
+        <Reference Include="SlimDX, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+          <SpecificVersion>False</SpecificVersion>
           <Private>False</Private>
         </Reference>
       </ItemGroup>
@@ -222,6 +224,7 @@
     <Compile Include="Vector3\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vector3\Vector3.SlimDX.cs" />
     <Compile Include="Vector3\Vector3.Xna.cs" />
   </ItemGroup>
   <ItemGroup>
