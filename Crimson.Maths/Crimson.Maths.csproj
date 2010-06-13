@@ -156,6 +156,7 @@
   <ItemGroup>
     <Content Include="Vector3\MissingXnaMethods.txt" />
     <Compile Include="Vector3\Vector3.Subtract.cs" />
+    <Compile Include="Vector3\Vector3.Divide.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,5 @@
-﻿Methods ive skipped
-
+﻿Methods not implmented
+___________________________
 Barycentric 
 CatmullRom
 Clamp
@@ -19,8 +19,14 @@ Min
 Multiply
 Negate
 Normalize
-all operators
 Reflect
 SmoothStep
 Transform
 TransformNormal
+
+
+__________
+Methods missing testing
+Xna casts
+Add
+Subtract
