@@ -5,16 +5,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crimson.Maths", "Crimson.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xna4Demo", "Xna4Demo\Xna4Demo\Xna4Demo.csproj", "{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Xna4DemoContent", "Xna4Demo\Xna4DemoContent\Xna4DemoContent.contentproj", "{52A96654-9BE1-44C1-B734-00FADFA09C65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xna4DemoContent", "Xna4Demo\Xna4DemoContent\Xna4DemoContent.contentproj", "{52A96654-9BE1-44C1-B734-00FADFA09C65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - SlimDX|Any CPU = Debug - SlimDX|Any CPU
+		Debug - SlimDX|x86 = Debug - SlimDX|x86
 		Debug - Xna3.1|Any CPU = Debug - Xna3.1|Any CPU
 		Debug - Xna3.1|x86 = Debug - Xna3.1|x86
 		Debug - Xna4|Any CPU = Debug - Xna4|Any CPU
 		Debug - Xna4|x86 = Debug - Xna4|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release - SlimDX|Any CPU = Release - SlimDX|Any CPU
+		Release - SlimDX|x86 = Release - SlimDX|x86
 		Release - Xna3.1|Any CPU = Release - Xna3.1|Any CPU
 		Release - Xna3.1|x86 = Release - Xna3.1|x86
 		Release - Xna4|Any CPU = Release - Xna4|Any CPU
@@ -23,6 +27,9 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - SlimDX|Any CPU.ActiveCfg = Debug - SlimDX|x86
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - SlimDX|x86.ActiveCfg = Debug - SlimDX|x86
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - SlimDX|x86.Build.0 = Debug - SlimDX|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - Xna3.1|Any CPU.ActiveCfg = Debug - Xna3.1|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - Xna3.1|x86.ActiveCfg = Debug - Xna3.1|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug - Xna3.1|x86.Build.0 = Debug - Xna3.1|x86
@@ -32,6 +39,9 @@ Global
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug|x86.ActiveCfg = Debug|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Debug|x86.Build.0 = Debug|x86
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - SlimDX|Any CPU.ActiveCfg = Release - SlimDX|x86
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - SlimDX|x86.ActiveCfg = Release - SlimDX|x86
+		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - SlimDX|x86.Build.0 = Release - SlimDX|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - Xna3.1|Any CPU.ActiveCfg = Release - Xna3.1|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - Xna3.1|x86.ActiveCfg = Release - Xna3.1|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release - Xna3.1|x86.Build.0 = Release - Xna3.1|x86
@@ -41,6 +51,8 @@ Global
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release|Any CPU.ActiveCfg = Release|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release|x86.ActiveCfg = Release|x86
 		{32F3AC84-5E5C-4EE4-8F65-806C7BB16ABB}.Release|x86.Build.0 = Release|x86
+		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug - SlimDX|Any CPU.ActiveCfg = Debug - SlimDX|x86
+		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug - SlimDX|x86.ActiveCfg = Debug - SlimDX|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug - Xna3.1|Any CPU.ActiveCfg = Debug|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug - Xna3.1|x86.ActiveCfg = Debug|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug - Xna3.1|x86.Build.0 = Debug|x86
@@ -50,6 +62,8 @@ Global
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug|x86.ActiveCfg = Debug|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Debug|x86.Build.0 = Debug|x86
+		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release - SlimDX|Any CPU.ActiveCfg = Release - SlimDX|x86
+		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release - SlimDX|x86.ActiveCfg = Release - SlimDX|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release - Xna3.1|Any CPU.ActiveCfg = Release|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release - Xna3.1|x86.ActiveCfg = Release|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release - Xna3.1|x86.Build.0 = Release|x86
@@ -59,12 +73,16 @@ Global
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release|Any CPU.ActiveCfg = Release|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release|x86.ActiveCfg = Release|x86
 		{18C78769-C5C5-41CD-8E30-1DDC06AB7AB8}.Release|x86.Build.0 = Release|x86
+		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - SlimDX|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - SlimDX|x86.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - Xna3.1|Any CPU.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - Xna3.1|x86.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - Xna4|Any CPU.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug - Xna4|x86.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Release - SlimDX|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Release - SlimDX|x86.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Release - Xna3.1|Any CPU.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Release - Xna3.1|x86.ActiveCfg = Debug|Any CPU
 		{52A96654-9BE1-44C1-B734-00FADFA09C65}.Release - Xna4|Any CPU.ActiveCfg = Debug|Any CPU
