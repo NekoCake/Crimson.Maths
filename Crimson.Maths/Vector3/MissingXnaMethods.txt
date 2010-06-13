@@ -1,0 +1,26 @@
+﻿Methods ive skipped
+
+Barycentric 
+CatmullRom
+Clamp
+Cross
+Distance
+DistanceSquared
+Divide
+Dot
+Equals
+GetHashCode
+Hermite
+Length
+LengthSquared
+Lerp
+Max
+Min
+Multiply
+Negate
+Normalize
+all operators
+Reflect
+SmoothStep
+Transform
+TransformNormal
