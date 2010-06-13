@@ -6,7 +6,6 @@ Clamp
 Cross
 Distance
 DistanceSquared
-Divide
 Dot
 Equals
 GetHashCode
