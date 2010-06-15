@@ -194,8 +194,8 @@
     <When Condition="'$(Configuration)' == 'Debug - SlimDX'">
       <ItemGroup>
         <Reference Include="SlimDX, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
-            <SpecificVersion>False</SpecificVersion>
-            <Private>False</Private>
+          <SpecificVersion>False</SpecificVersion>
+          <Private>False</Private>
         </Reference>
       </ItemGroup>
     </When>
@@ -224,6 +224,8 @@
     <Compile Include="Vector3\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vector3\Vector3.Dot.cs" />
+    <Compile Include="Vector3\Vector3.Multiply.cs" />
     <Compile Include="Vector3\Vector3.SlimDX.cs" />
     <Compile Include="Vector3\Vector3.Xna.cs" />
   </ItemGroup>

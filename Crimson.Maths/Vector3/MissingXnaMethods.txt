@@ -6,7 +6,6 @@ Clamp
 Cross
 Distance
 DistanceSquared
-Dot
 Equals
 GetHashCode
 Hermite
@@ -15,7 +14,6 @@ LengthSquared
 Lerp
 Max
 Min
-Multiply
 Negate
 Normalize
 Reflect
@@ -32,3 +30,5 @@ SlimDX casts
 Add
 Subtract
 Divide
+Multiply
+Dot
