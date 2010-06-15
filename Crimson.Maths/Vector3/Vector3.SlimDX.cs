@@ -16,9 +16,9 @@ namespace Crimson.Maths
 
         public static implicit operator Vector3(SlimVector3 @this)
         {
-            Vector3 @return = new Vector3();
-            @return.InternalVector3 = @this;
-            return @return;
+            Vector3 result = new Vector3();
+            result.InternalVector3 = @this;
+            return result;
         }
     }
 }

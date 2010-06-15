@@ -26,9 +26,9 @@
             };
         }
 
-        public static void Add(ref Vector3 a, ref Vector3 b, out Vector3 @return)
+        public static void Add(ref Vector3 a, ref Vector3 b, out Vector3 result)
         {
-            @return = new Vector3
+            result = new Vector3
                          {
                              X = a.X + b.X, 
                              Y = a.Y + b.Y, 

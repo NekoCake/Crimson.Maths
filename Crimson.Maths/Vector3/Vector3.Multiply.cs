@@ -42,9 +42,9 @@
             };
         }
 
-        public static void Multiply(ref Vector3 a, ref Vector3 b, out Vector3 @return)
+        public static void Multiply(ref Vector3 a, ref Vector3 b, out Vector3 result)
         {
-            @return = new Vector3
+            result = new Vector3
             {
                 X = a.X * b.X,
                 Y = a.Y * b.Y,
@@ -62,9 +62,9 @@
             };
         }
 
-        public static void Multiply(ref Vector3 a, float scaler, out Vector3 @result)
+        public static void Multiply(ref Vector3 a, float scaler, out Vector3 result)
         {
-            @result = new Vector3
+            result = new Vector3
             {
                 X = a.X * scaler,
                 Y = a.Y * scaler,
