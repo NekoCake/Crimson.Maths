@@ -30,7 +30,7 @@ namespace Xna4Demo
             b.X = b.Y = b.Z = 1;
 
             // c = Vector3.Add(a, b);
-            c.InternalVector3 = a.InternalVector3 + b.InternalVector3; // <-- interesting
+            c.XnaVector3 = a.XnaVector3 + b.XnaVector3; // <-- interesting
 
             Vector3 vec = new Vector3(1, 2, 3); // testing type casting
             XnaVector3 test = vec;

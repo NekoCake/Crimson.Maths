@@ -7,17 +7,17 @@ namespace Crimson.Maths
     public partial struct Vector3
     {
         [FieldOffset(0)]
-        public XnaVector3 InternalVector3;
+        public XnaVector3 XnaVector3;
 
         public static implicit operator XnaVector3(Vector3 @this)
         {
-            return @this.InternalVector3;
+            return @this.XnaVector3;
         }
 
         public static implicit operator Vector3(XnaVector3 @this)
         {
             Vector3 result = new Vector3();
-            result.InternalVector3 = @this;
+            result.XnaVector3 = @this;
             return result;
         }
     }

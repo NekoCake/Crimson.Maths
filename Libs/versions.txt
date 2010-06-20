@@ -1,0 +1,2 @@
+SlimDx is feb 2010
+mSpec is http://teamcity.codebetter.com/viewLog.html?buildId=13446&buildTypeId=bt188&tab=artifacts
